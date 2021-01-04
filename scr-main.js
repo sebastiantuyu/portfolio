@@ -1,6 +1,17 @@
 
+var x = document.getElementById('form');
+var y = true;
 
-$('#formButton').on('click', function() {
-    if ($('#form').css('opacity') == 0) $('#form').css('opacity', 1);
-    else $('#form').css('opacity', 0);
-});
+function action(){
+    
+    if (y) {
+        //x.style.visibility = 'hidden';
+        setTimeout(() => {  x.style.display='none'; }, 1050);
+        x.style.opacity =0;
+        y = false;
+    }else{
+        x.style.opacity=0;
+        y = true;
+    }
+}
+
