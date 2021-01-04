@@ -20,10 +20,11 @@ body,html{
   
 }
 .secondary{
-  top:60%;
+  bottom: 0%;
   width:100%;
   height:15%;
   background-color:black;
+    
 }
 .navbar-main{
   width:100%;
@@ -39,32 +40,55 @@ body,html{
 }
 .box-title{
 
-  margin-left:20%;
+  margin-left:5%;
   height:100%;
   width:300px;
   /*background-color:red;*/
+}
+
+.main-image{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-image img{
+    margin-top: 4%;
+    width: 50%;
 }
 
 .box-image{
   position:fixed;
   z-index:2;
   height:85%;
-  width:400px;
+  width:50%;
   top:0;
   margin-left:50%;
-  background:url(https://i.ibb.co/TbQcmtz/garyvee-1.png);
-  background-size:cover;
+  background:;
+  background-position: 90%;
+  background-size: 100% ;
   background-repeat:no-repeat;
+
   
 }
 
 .title{
   display:flex;
   justify-content:center;
-  margin-top:15%;
-  font-size:2.5rem;
+  margin-top:0%;
+  font-size:25px;
   line-height: 94.9%;
+    width: 65%;
 }
+
+
+.sub-tit{
+  font-size:1em;
+  line-height:94.4%;
+  font-weight: 300;
+ width: 65%;
+}
+
 
 .nav-logo{
   
@@ -72,6 +96,8 @@ body,html{
   margin-left:2%;
   width:4.5%;
 }
+
+
 
 .nav-link{
   color:black;
@@ -98,15 +124,11 @@ display: flex;
   text-align:center;
   color:white;
   letter-spacing: 0.15em;
-  font-size:20px;
+  font-size:15px;
   margin-bottom:0px;
 }
 
-.sub-tit{
-  font-size:30px;
-  line-height:94.4%;
-  font-weight: 300;
-}
+
 
 .whom{
    font-weight:300;
@@ -122,17 +144,30 @@ display: flex;
 }
 
 
+.box-title p{
+    display: flex;
+    justify-content: center;
+}
+.foot{
+    
+}
 .logos{
   display:flex;
-  height:60%;
+  height:50%;
   width:100%;
-  padding:0px;
-  margin-top:.6em;
+  padding-top:0.15em;
+  margin:0px;
+  justify-content: center;    
 }
 
 .log{
-  max-height:70%;
-        
+    display:flex; 
+    padding:0px;
+    max-height:40%;
+  /*justify-content: center;        */
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -158,10 +193,116 @@ display: flex;
 
 }
 
-@media screen and (max-width:320px){
+
+/* **********************************************
+*                                               *     
+*                 MEDIA QUIERIES                *
+*                                               * 
+*************************************************/
+
+
+@media screen and (min-width:320px){
     .logos{
-        flex-wrap: wrap;
-        justify-content: space-around;
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-around;*/
+        width: 100%;
+        height: 0%;
+    }
+    .log{
+        max-height: 50%;
+        align-items: center;
+    }
+    
+    .box-image{
+        background:url(https://i.ibb.co/DMNz7R0/gv-ok.png);
+        background-repeat:no-repeat;
+        background-size: 100%;
+        background-position: 0%; 
+        height: 50%;
+    }
+    
+    .title{
+        font-size: 25px;
+    }
+
+}
+
+
+
+@media screen and (min-width:425px){
+    .main-image img{
+        width: 55%;
+    }
+    
+ .box-image{
+        background-size: 75%;
+        background-position: 0%; 
+         height: 55%;
+    }
+    
+    .title{
+        font-size: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:667px){
+     .box-image{
+        background-size: 65%;
+        background-position: 0%; 
+         height: 60%;
+    }
+    
+    
+    .title{
+         margin-left: 10%;
     }
     
 }
+
+
+
+@media screen and (min-width:768px){
+    .log{
+        max-height: 60%;
+        align-items: center;
+    }
+    
+    .main-image img{
+        width: 60%;
+    }
+     .box-image{
+        background-size: 60%;
+        background-position: 0%;
+         height: 85%;
+    }
+    
+    .title{
+        font-size: 45px;
+        width: 9em;
+         margin-left: 15%;
+    }
+}
+@media screen and (min-width:1024px){
+    .log{
+        max-height: 60%;
+        align-items: center;
+    }
+    
+    .main-image img{
+        width: 75%;
+    }
+    
+     .box-image{
+        background-size: 55%;
+         background-position: 0%;
+         height: 85%;
+    }
+    
+    .title{
+        font-size: 50px;
+        margin-left: 30%;
+    }
+}
+
