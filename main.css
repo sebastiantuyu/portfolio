@@ -35,7 +35,8 @@
   position: fixed;
   top:10px;
   left:10px;
-  font-size: 35px;   
+  font-size: 35px;  
+z-index: 6;
 }
 
 
@@ -231,6 +232,45 @@ display: flex;
 
 }
 
+
+.menu  {
+    position: fixed;
+    z-index: 5;
+    top:0;
+    left:-100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:.2s;
+    
+}
+
+.menu ol{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-cont{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+}
+
+.menu-elem{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.active{
+    left: 0;
+}
 
 
 /* **********************************************

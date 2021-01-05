@@ -2,6 +2,13 @@
 var x = document.getElementById('form');
 var y = true;
 
+
+
+var menu = document.querySelector('#menu');
+const btn = document.querySelector('#menu-btn');
+btn.addEventListener('click', onOff);
+
+
 function action(){
     
     if (y) {
@@ -15,3 +22,13 @@ function action(){
     }
 }
 
+
+function onOff(){
+    console.log('ok');
+
+    if(!menu.classList.contains('active')){
+       menu.classList.add('active');
+       }else{
+        menu.classList.remove('active');
+       }
+}
