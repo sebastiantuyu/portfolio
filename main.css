@@ -144,7 +144,8 @@ display: flex;
   color:white;
   letter-spacing: 0.15em;
   font-size:15px;
-  margin-bottom:0px;
+  padding-top: 0.5em;    
+  margin-bottom: 0.25em;
 }
 
 
@@ -341,7 +342,6 @@ display: flex;
 }
 
 
-
 @media screen and (min-width:425px){
     .main-image img{
         width: 55%;
@@ -371,8 +371,16 @@ display: flex;
     .icon-menu{
         font-size:25px;
     }
-
+    
+    .comp{
+        height: 38vh;
+            top:48vh;
+    /* Props hererdadas 
+        width: 100vw;
+    height: 40vh;*/
+    }
 }
+
 
 @media screen and (min-width:667px){
      .box-image{
@@ -401,8 +409,15 @@ display: flex;
         .icon-menu{
         visibility: hidden;
     }
+    
+    .comp{
+        height: 30vh;
+            top:55vh;
+    /* Props hererdadas 
+        width: 100vw;
+    height: 40vh;*/
+    }
 }
-
 
 
 @media screen and (min-width:768px){
@@ -429,8 +444,10 @@ display: flex;
         .sub-tit{
         margin-left: 3em;
     }
+    .comp{
+        visibility: collapse;
+    }
 }
-
 
 
 @media screen and (min-width:1024px){
