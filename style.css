@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?s60nrr');
+  src:  url('fonts/icomoon.eot?s60nrr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s60nrr') format('truetype'),
+    url('fonts/icomoon.woff?s60nrr') format('woff'),
+    url('fonts/icomoon.svg?s60nrr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 35px;
+    color: white;
+    padding-left:0.25em;
+    padding-right:0.25em; 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ytb:before {
+  content: "\e901";
+}
+.icon-igm:before {
+  content: "\e902";
+}
+.icon-faceb:before {
+  content: "\e903";
+}
+.icon-github:before {
+  content: "\e900";
+}
+
+.icon-linkedin:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e904";
+  border-radius:50%;
+  color:black;
+  position: fixed;
+  top:10px;
+  left:10px;
+  font-size: 35px;  
+  z-index: 8;
+}
