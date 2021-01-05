@@ -35,10 +35,12 @@ body,html{
   
 }
 .secondary{
+  position: fixed;
   bottom: 0%;
   width:100%;
   height:15%;
   background-color:black;
+  z-index: 7;    
     
 }
 .navbar-main{
@@ -155,6 +157,7 @@ display: flex;
   color:#fff;
   font-weight:300;
   letter-spacing:.1em;
+  visibility: collapse;
 }
 
 
@@ -269,15 +272,14 @@ display: flex;
     top:45vh;
     width: 100vw;
     height: 40vh;
-    background:grey;
-    display: flex;
+    background:black;
     
 }
 .comp div{
     display: flex;
     margin-right: 5%;
     width: 95%;
-    height:100%;
+    height:85%;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -288,14 +290,29 @@ display: flex;
     display: flex;
 
 }
+.comp p{
+    display: flex;
+    height: auto;
+    margin-top:0;
+}
+.comp-tit{
+    font-size:25px ;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 0.8em;
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+    
+}
+
 
 /* **********************************************
 *                                               *     
 *                 MEDIA QUIERIES                *
 *                                               * 
 *************************************************/
-
-
+ 
 @media screen and (min-width:320px){
     .logos{
         /*flex-wrap: wrap;*/
@@ -330,11 +347,14 @@ display: flex;
     .main-button{
         visibility: visible;
         display: block;
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin:0.5em;
         width: 50%;
     }
     
+    .portfolio{
+        visibility: collapse;
+    }
         .icon-menu:before{
         font-size:30px;
     }
@@ -379,6 +399,9 @@ display: flex;
         width: 100vw;
     height: 40vh;*/
     }
+        .comp img{
+        height: 95%;
+    }
 }
 
 
@@ -396,6 +419,9 @@ display: flex;
     
     .main-button{
         visibility: visible;
+    }
+    .portfolio{
+        visibility: hidden;
     }
     
     .sub-tit{
@@ -416,6 +442,9 @@ display: flex;
     /* Props hererdadas 
         width: 100vw;
     height: 40vh;*/
+    }
+    .comp img{
+        height: 95%;
     }
 }
 
@@ -446,6 +475,9 @@ display: flex;
     }
     .comp{
         visibility: collapse;
+    }
+    .portfolio{
+        visibility: visible;
     }
 }
 
