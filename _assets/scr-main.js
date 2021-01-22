@@ -1,4 +1,7 @@
 
+// CONSULTAR MEDIOS DE PAG
+
+var win = window.matchMedia('screen and (max-width:767px)');
 var x = document.getElementById('form');
 var y = true;
 
@@ -7,7 +10,11 @@ var y = true;
 var menu = document.querySelector('#menu');
 const btn = document.querySelector('#menu-btn');
 btn.addEventListener('click', onOff);
+win.addListener(show);
 
+function show(event){
+    console.log(event.matches);
+}
 
 function action(){
     
