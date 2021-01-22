@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="./_assets/main.css">
+=======
+    <link rel="stylesheet" href="./_assets/main.css">
+    <link rel="stylesheet" href="./_assets/style.css">
+>>>>>>> cellView
  
 
 </head>
@@ -24,7 +29,10 @@
 
 <div class="main">
 
-<span class="icon-menu" id="menu-btn"></span>
+<div style="position: fixed;z-index: 8;">
+    <span class="icon-menu" id="menu-btn"></span>
+</div>
+<!-- BARRA DE NAVEGACION  -->
 <nav class="navbar-main">
   
 <div class="d-flex justify-content-center ">
@@ -32,10 +40,8 @@
   <img src="https://i.ibb.co/LCy6qXr/logo-sebas.png" alt="" class="">
 </a>
 </div>
-</nav>
- 
- 
- <!-- style="position:relative;align-self: center;" -->
+</nav> 
+
  <!-- Vista princpal -->
   <div class="content" id="form">
         <div class="box-title">  
@@ -57,7 +63,13 @@
   </div>
 </div>
 
+<div class="comp">
+        <p class="comp-tit">PORTAFOLIO</p>
+<div>
+                <img src="img/cellphone.png" alt="">
+</div>
 
+</div>
 
 <div class="secondary">
   <p class="contact-center"> CONTACTO </p>
@@ -65,18 +77,22 @@
   <div class="foot">
     <div class="logos">
      <a class="log" href="https://www.youtube.com/channel/UCmJqbaclpm3dL4Wv4sSFXRA">
-               <img src="img/ytb.svg" class="log" alt="">
+                 <span class="icon-ytb log"></span>
       </a>
     <a class="log" href="https://www.linkedin.com/in/sebastian-tuyu-2530b0186/">
-           <img src="img/lnk.svg" class="log" alt="">
+                 <span class="icon-linkedin log"></span>
       </a>           
                    
   <a class="log" href="https://www.instagram.com/pineiro2u/">
-            <img src="img/ig.svg" class="log" alt="">
-    </a>                    
+                 <span class="icon-igm log"></span>
+                  </a>  
+               
+        <a href="#" class="log">
+        <span class="icon-github log"></span>
+        </a>                  
                 
   <a class="log" href="https://www.facebook.com/sebasalextuyu">
-           <img src="img/fb.svg" class="log" alt="">
+                 <span class="icon-faceb log"></span>
    </a>
 </div>
                  
