@@ -2,3 +2,4 @@
 *.jpg
 *.py
 v_env
+*.code-workspace
