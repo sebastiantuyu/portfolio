@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="range.css">
+</head>
+<body onload="setData()">
+    <section class="initial-helper" id="i-helper">
+        <div class="helper-content">
+          <div class="helper-title">
+                <p style="margin: 0.25em 0 0 0;font-size: 22px;">
+                    Simulador de <b>inversiones</b>
+                </p>
+          </div>
+          <div class="helper-content-content">
+        
+            <div style="text-align:center;space-between;align-self: center;">
+               <p class="t-1">
+                ¿Cuanto podrías ganar de tus inversiones?
+               </p>
+                
+
+                <p class="t-2">
+                    Este simulador <b><u>te sugiere</u></b> que apps podrías usar según tu inversión que quieras alcanzar.
+                </p>
+            </div>
+            
+                <div style="justify-content: center;text-align: center;margin-bottom: 15%;">
+                    <p class="credits">Desarrollado con 🧡 por</p>
+                    <p class="credits" > 
+                        <a href="https://github.com/sebastiantuyu" style="text-decoration: none;color:black">@SebastianTuyu</a>         
+                    </p>
+                        <button onclick="hideHelper()" class="helper-button">EMPEZAR</button>
+                </div>
+          </div>
+      
+      
+      
+        </div>
+      </section>
+      <section class="apps-d-section" id="i-apps">
+           <div class="a-section-content">
+            <div class="helper-title">
+              <p style="margin: 0.25em 0 0 0;font-size: 22px;">
+                  Simulador de <b>inversiones</b>
+              </p>
+          </div>  
+
+<div>
+  <div class="a-subtitle">
+    <p style="font-size: 20px;">Si quieres obtener</p>
+    <p class="yoy-u"><b id="y-b">99</b>%</p>
+  </div>
+  <div class="a-content">
+    <div class="a ">
+      <img src="" alt="" id="app-m-1" data-view="hid" class="a-logo">
+    </div>
+    <div class="a">
+      <img src="" alt="" id="app-m-2" data-view="hid" class="a-logo">
+    </div>
+    <div class="a">
+      <img src="" alt="" id="app-m-3" data-view="hid" class="a-logo">
+    </div>
+    <div class="a">
+      <img src="" alt="" id="app-m-4" data-view="hid" class="a-logo">
+    </div>
+</div>
+</div>
+              <div style="justify-content: center;text-align: center;margin-bottom: 10%;">
+                <p class="credits">Desarrollado con 🧡 por</p>
+                <p class="credits" > 
+                    <a href="https://github.com/sebastiantuyu" style="text-decoration: none;color:black">@SebastianTuyu</a>         
+                </p>
+                    <button onclick="hideApps()" class="helper-button">EMPEZAR</button>
+            </div>
+            </div>
+        </section>
+      <section class="main-grid">
+          <div class="item i-1">
+          
+              <!-- SECCION GRAFICO -->
+            <div class="title">
+                <p>Simulador de <b>Inversiones</b></p>
+                </div>
+            <div class="chart">
+              <div class="chart-box soft-shadow" id="chart_div1">
+                
+              </div>
+            </div>
+          </div>
+          <div class="item i-2">
+            <!-- SECCION DESLIZADORES -->
+            <div class="big-button">
+              <button class="how-work" id="hw-2" onclick="hideHelper()"> COMO FUNCIONA </button>
+            </div>
+             <div class="data-range">
+                        <div class="data">
+                            <div class="price-title">INVERSION ANUAL</div>
+                                <div style="display: flex;justify-content: space-around;">
+                                    <input type="range" id="amount" value="2" step="2" min="2" max="20" onchange="amountChange()">  
+                                    <div class="price-helper"><small>$</small><span id="amount-tag">2</span>k</div>
+                                </div>
+                        </div>
+                        
+                        <div class="data">
+                            <div class="yoy-title">% DE GANANCIA</div>
+                                    <div style="display: flex;justify-content: space-around;">
+                                        <input type="range" id="yoy" onchange="yoyChange()" value="4" step="1" min="4" max="30">  
+                                        <div class="yoy-helper"><small>%</small><span id="yoy-tag">4</span></div>
+                                </div>
+                        </div>
+              
+      
+            </div>
+            
+            <!-- SECCION DE BOTONES: SM DISPLAY ONLY -->
+            <div class="buttons-section">
+              <button class="how-work" onclick="hideHelper()">COMO FUNCIONA</button>
+              <button class="app-disp white-shadow" onclick="hideApps()">VER APPS</button>
+            </div>
+        </div>
+          <div class="item i-3">
+            <!-- SECCION APPS -->
+            <div class="apps-section">
+              <div class="selected-apps soft-shadow">
+                <div class="b-s-apps">
+                  <p>Si quieres ganar</p>
+                  <p id="yoy-a"><b id="y-a">12</b>%<small>ANUAL</small></p>  
+                </div>
+                    <div class="b-a-sec">
+                        <div class="b-a-content">
+                              <div class="b-a">
+                                  <img src="" id="app-1" alt="" >
+                              </div>
+                              <div class="b-a">
+                                  <img src="" id="app-2" alt="" >
+                              </div>
+                              <div class="b-a">
+                                  <img src="" id="app-3" alt="" >
+                              </div>
+                              <div class="b-a">
+                                  <img src="" id="app-4" alt="" >
+                              </div>
+                        </div>
+                    </div>
+
+              </div>
+            </div>
+          </div>
+      </section>  
+
+    <script src="script.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
