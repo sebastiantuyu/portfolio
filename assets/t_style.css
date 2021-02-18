@@ -1,45 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-
-html,body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+:root{
+  --dark:#333333;
+  --bull:url('https://cdn.pixabay.com/photo/2017/08/20/13/10/usa-2661656_1280.jpg');
+  --code:url('https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80');
+}
+body,html{
+  margin:0;
+  height:100%;
+  width:100%;
+  font-family:'Roboto';
+ scroll-snap-type: y mandatory;
+}
+section{scroll-snap-align: start;}
+.f-size{
+  width:100%;height:100%;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+	
+}
+.f-view{
   width:100%;
   height:100%;
-  margin:0px;
-  font-family:monospace;
+  background:black;
 }
-nav{
-  margin:0;
-  height:50px;
+.s-view{
   width:100%;
-}
-.note{
-  width:100%;
-  height:calc(100% - 50px);
-  display:flex;
+  height:100%;
+  background:white;
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns:1fr 1fr;
+
 }
 
-.warning{
-   font-size:25px;
-  width:50%;
-  padding:1em;
-  border-radius:1%;
-  text-align:center;
-  margin-right:auto;
-  margin-left:auto;
+/*
+.b-eff{
+  width:100%;
+  height:100%;
+  display:flex;
+  
+}*/
+/* MAIN VIEW SECTION */
+.nav{
+  background:var(--dark);
+  height:50px;
+}
+.content{
+  background:var(--dark);
+  height:calc(100% - 100px);
+}
+.footer{
+  background:var(--dark);
+  height:50px;
+}
+
+/* PORTAFOLIOS SECTION */
+.title{
+  
+  width:100%;
+  display:flex;
+  justify-content:center;
   align-self:center;
-  background:#333333;
+  font-weight: 300;
+  font-size:35px;
+  line-height: 94.9%;
   color:white;
+}
+
+.item{
+  width:100%;height:100%;
+  display:flex;
+  justify-content:center;
+  opacity:1;
+  transition:0.25s;
+  background-size:cover;
+  background-position:center;
+  transition: 0.2s;
+  filter: grayscale(0%);
+}
+
+
+.item.por{
+   background:linear-gradient(180deg, rgba(90, 94, 97, 0) 0%, #5A5E61 60%), var(--code);
+background-position:center;
+}
+
+.item.inv{
+background:linear-gradient(180deg, rgba(90, 94, 97, 0) 0%, #5A5E61 60%), var(--bull);
+  background-position:center;
+}
+
+
+.item-child{
+  display:BLOCK;
+  width:100%;
+  height:100%;
+  justify-content:center;
+}
+.tit{
+  display:flex;
+  width:100%;
+  height:50%;
+  color:white;
+  justify-content:center;
+  align-items:flex-end;
+    font-weight: 300;
+  font-size:45px;
+  line-height: 94.9%;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
   
 }
-div a{
+.cont{
+  display:flex;
+  color:white;
+  justify-content:center;
+  text-align:center;
+  padding:1em;
+  font-weight: 200;
+  font-size:25px;
+}
+.r-cont{display:flex;justify-content:center;}
+.redirect{
+  display:flex;
+  border:2px solid white;
+  background:rgba(0,0,0,0);
+  padding:1em;
+  font-size:15px;
+  letter-spacing:0.1em;
+  justify-items:center;
   color:white;
 }
+.item-top{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size:cover;
+  opacity:1;
+  transition:0.35s;
+  
+}
+.item-top.inv{
+    background:var(--bull);
+    background-position:center;
+}
+.item-top.por{
+    background:var(--code);
+    background-position:center;
+}
+.item-top:hover{opacity:0;}
 
-.shadow{
-  -webkit-box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.5);
--moz-box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.5);
-box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.5);
+
+
+.mayus{
+    /*text-transform:uppercase;*/
+    font-variant: small-caps;
 }
 
-@media screen and (max-width: 420px) {
-  .warning{font-size:18px;}
+/* EFECTS:HOVERS */
+.item.por:hover{
+  background:linear-gradient(180deg, rgba(90, 94, 97, 0) 0%, #5A5E61 60%), url('https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80');
+  background-position:center;
+
 }
+
+.item.inv:hover{
+    /*background:var(--bull);
+  background-position:center;
+  */
+  
+}
+
+/* MEDIA QUERIES */
