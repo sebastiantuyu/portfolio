@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 :root{
   --dark:#333333;
-  --bull:url('https://cdn.pixabay.com/photo/2017/08/20/13/10/usa-2661656_1280.jpg');
+  --green:#74867A;
+  --white:#F5F0EA;
+  --gray:#5A5E61;
+  /*--bull:url('https://cdn.pixabay.com/photo/2017/08/20/13/10/usa-2661656_1280.jpg');*/
+  --bull:url('https://images.unsplash.com/photo-1599585113438-291af1a8d1db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1037&q=80');
   --code:url('https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80');
+  --photo:url('https://rodrigoherreraaspra.com/wp-content/uploads/2018/07/biografia-1.png');
 }
 body,html{
   margin:0;
@@ -22,7 +28,9 @@ section{scroll-snap-align: start;}
 .f-view{
   width:100%;
   height:100%;
-  background:black;
+  background: linear-gradient(0deg, rgba(45, 45, 45, 0.5), rgba(45, 45, 45, 0.5)), var(--photo);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .s-view{
   width:100%;
@@ -34,26 +42,53 @@ section{scroll-snap-align: start;}
 
 }
 
-/*
-.b-eff{
-  width:100%;
-  height:100%;
-  display:flex;
-  
-}*/
+
 /* MAIN VIEW SECTION */
 .nav{
-  background:var(--dark);
   height:50px;
 }
 .content{
-  background:var(--dark);
   height:calc(100% - 100px);
+  padding:0 5% 0 10%;
 }
 .footer{
-  background:var(--dark);
-  height:50px;
+  background:var(--green);
+  height:75px;
 }
+
+
+.m-section{
+  color:white;
+  font-size: 45px;
+  font-weight: 200;
+  padding-right:15%;
+  width: fit-content;
+  border-bottom: 1.5px solid var(--white);
+}
+.m-tit{
+  color: var(--white);
+  font-weight: 300;
+  font-size: 35px;
+  align-items: flex-end;
+  width: 100%;
+  display: flex ;
+}
+.m-cont{
+  display: flex;
+  color: #F5F0EA;
+  height: calc(100%-55.5px);  padding-bottom: 1em;
+
+
+}
+.m-s-cont{
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: calc(100% - 55.5px);
+  bottom: 0;
+
+}
+
 
 /* PORTAFOLIOS SECTION */
 .title{
@@ -144,11 +179,13 @@ background:linear-gradient(180deg, rgba(90, 94, 97, 0) 0%, #5A5E61 60%), var(--b
   
 }
 .item-top.inv{
-    background:var(--bull);
+    /*background:var(--bull);*/
+    background: linear-gradient(0deg, rgba(90, 94, 97, 0.5), rgba(255, 255, 255, 0.30)), var(--bull);
     background-position:center;
 }
 .item-top.por{
-    background:var(--code);
+    /*background:var(--code);*/
+    background: linear-gradient(0deg, rgba(90, 94, 97, 0.5), rgba(255, 255, 255, 0.30)), var(--code);
     background-position:center;
 }
 .item-top:hover{opacity:0;}
