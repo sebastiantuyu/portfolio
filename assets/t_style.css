@@ -46,6 +46,10 @@ section{scroll-snap-align: start;}
 /* MAIN VIEW SECTION */
 .nav{
   height:50px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  backdrop-filter: blur(5px);
 }
 .content{
   height:calc(100% - 100px);
@@ -57,6 +61,21 @@ section{scroll-snap-align: start;}
 }
 
 
+
+.nav-item{
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-content: center;
+  font-size: 20px;
+}
+
+.n-item{
+  color: white;
+  text-decoration: none;
+  margin:2em;
+  font-weight: 200;
+}
 .m-section{
   color:white;
   font-size: 45px;
@@ -71,21 +90,21 @@ section{scroll-snap-align: start;}
   font-size: 35px;
   align-items: flex-end;
   width: 100%;
-  display: flex ;
+
 }
 .m-cont{
-  display: flex;
+  width: 80%;
   color: #F5F0EA;
   height: calc(100%-55.5px);  padding-bottom: 1em;
-
+  font-weight: 200;
 
 }
 .m-s-cont{
-  position: relative;
+  position: absolute;
+  bottom:85px;
   display: flex;
   width: 40%;
-  height: calc(100% - 55.5px);
-  bottom: 0;
+
 
 }
 
