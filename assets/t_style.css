@@ -29,7 +29,11 @@ section {
   display:flex;
   overflow:hidden;
 }
-.s-proy{}
+.s-proy{
+  display: flex;
+  color: white;
+
+}
 
 
 /* MAIN SECTION: ITEMS */
@@ -51,7 +55,6 @@ section {
   height:100%;
   width:40%;
 }
-
 .b-first .title{
   display:flex;
   color:white;
@@ -109,4 +112,30 @@ section {
 .b-second .container img{
   width:100%;
   padding:5% 0 10% 0;
+}
+
+
+.s-first{
+  width: 55%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 1fr;
+  
+}
+.s-second{
+  width: 45%;
+  height: 100%;
+}
+.s-proy .title{
+  font-size:45px;
+  text-align: left;
+  padding:5% 0 0 5%;
+  width:40%;
+  border-bottom:1px solid white;
+  height:50px;
+}
+.s-first .content{
+  position: relative;
+  height:calc(100% - 50px);
 }
