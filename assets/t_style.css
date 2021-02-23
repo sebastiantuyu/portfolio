@@ -126,16 +126,37 @@ section {
 .s-second{
   width: 45%;
   height: 100%;
+  display: flex;
 }
 .s-proy .title{
-  font-size:45px;
-  text-align: left;
-  padding:5% 0 0 5%;
+  display:flex;
+  color:white;
+  font-size:35px;
   width:40%;
+  margin:5% 0 0 5%;
+  height:fit-content;
+  text-align:left;
   border-bottom:1px solid white;
-  height:50px;
 }
 .s-first .content{
   position: relative;
   height:calc(100% - 50px);
+}
+
+.s-second .image{
+
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.s-second .image img{
+  object-fit: contain;
+  align-self: center;
+}
+
+.s-second .next{
+  width:20%;
+  background: blue;
 }
