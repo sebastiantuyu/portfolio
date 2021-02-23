@@ -63,7 +63,7 @@ section {
   border-bottom:1px solid white;
 }
 .b-first .content{
-  width:calc(100%-5em);
+  width:calc(100% - 5em);
   color:white;
   font-size:25px;
   padding-left:5em;
@@ -83,10 +83,13 @@ section {
 
 }
 .b-first .content .image{
-  
+  display:flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: auto;
 }
 .b-first .content .image img{
-  width:100%;
+  width:60%;
   height:auto;
   object-fit:contain;
 }
