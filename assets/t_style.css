@@ -8,8 +8,8 @@ body{
   font-family:'Roboto Condensed';
 }
 html {
-  scroll-snap-align: start;
-  scroll-snap-type:y mandatory;
+  /*scroll-snap-align: start;
+  scroll-snap-type:y mandatory;*/
   /*scroll-snap-points-y: repeat(100vh);*/
   /*scroll-snap-type: y mandatory;*/
 }
@@ -35,6 +35,10 @@ section {
 
 }
 
+#bio-content{
+  /*position: relative;*/
+  font-size: 120%;
+}
 
 /* MAIN SECTION: ITEMS */
 .item:nth-of-type(1){
@@ -60,24 +64,24 @@ section {
   color:white;
   font-size:35px;
   width:40%;
-  margin:5% 0 0 5%;
-  height:fit-content;
+  /*margin:5% 0 0 5%;*/
+  height:100%;
   text-align:left;
   border-bottom:1px solid white;
 }
 .b-first .content{
-  width:calc(100% - 5em);
+  width:calc(100% - 2em);
   color:white;
-  font-size:25px;
+  /*font-size:25px;*/
   padding-left:5em;
   text-align:left;
-  margin:5% 0 0 0;  
+  /*margin:5% 0 0 0;*/
 }
 .b-first .content .kmore{
   color:white;
   border:1px solid white;
   background:#222222;
-  font-size:18px;
+  font-size:2vh;
   letter-spacing: 0.1em;
   padding:.5em;
   font-variant: small-caps;
@@ -87,10 +91,10 @@ section {
 }
 .b-first .content .image{
   display:flex;
-  height: 15%;
+  height: 25%;
   justify-content: center;
   /*margin-top: 10%;*/
-  margin-bottom: auto;
+  margin-top:5%;
 }
 .b-first .content .image img{
   width:100%;
@@ -169,7 +173,9 @@ section {
 
 .hor-car{display: none;}
 
-.bio{height: 35%;}
+.bio{
+  padding-top:10%;
+  height: 20%;}
 .carrusell{
   position:relative;
   height: 50%;
@@ -190,10 +196,10 @@ section {
     grid-template-rows:60px 1fr;
     grid-template-columns:1fr;
   }
-  .s-biog .b-first .content{
-    font-size: 20px;
-    width: calc(100% - 2.5em);
-    padding:0 0.5em 0 2em;
+  .b-first .content{
+    /*font-size: 20px;*/
+    width:calc(100vw - 3em);
+    padding:0 1em 0 2em;
   }
   .b-first .content .kmore{
     width: 80%;
@@ -214,7 +220,12 @@ section {
     padding-left: 170%;
   }
   .hor-car img{width: 75%; object-fit: contain;padding:0 5% 0 5%;}
+  .s-first{width:100%;}
+  .s-second{display: none;}
 }
 @media screen and (min-width:420px){}
 @media screen and (min-width:768px){}
-@media screen and (min-width:1024px){}
+@media screen and (min-width:1024px){
+  .s-first{width:55%;}
+  .s-second{width:45%;display:flex;}
+}
