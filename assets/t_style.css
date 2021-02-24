@@ -72,15 +72,13 @@ section {
   font-size:35px;
   width:40%;
   /*margin:5% 0 0 5%;*/
-  height:100%;
   text-align:left;
   border-bottom:1px solid white;
 }
 .b-first .content{
-  width:calc(100% - 2em);
+  /*width:calc(100% - 2em);*/
   color:white;
   /*font-size:25px;*/
-  padding-left:5em;
   text-align:left;
   /*margin:5% 0 0 0;*/
 }
@@ -103,8 +101,8 @@ section {
   /*margin-top: 10%;*/
   margin-top:5%;
 }
-.b-first .content .image img{
-  width:100%;
+.bio-image{
+  width:80%;
   height:auto;
   object-fit:contain;
 }
@@ -183,6 +181,7 @@ section {
 .hor-car{display: none;}
 
 .bio{
+  padding-left:5em;
   padding-top:10%;
   height: 20%;}
 .carrusell{
@@ -204,7 +203,7 @@ section {
     grid-template-columns: 1fr;
     grid-template-areas:"c c";
   }
-  
+  .bio-image{width: 80%;}
   
   /*.s-biog{
     display: block;
@@ -244,10 +243,12 @@ section {
   .s-first{width:100%;}
   .s-second{display: none;}*/
 }
-/*
-@media screen and (min-width:420px){}
+
+@media screen and (min-width:420px){
+  .bio-image{width:60%;}
+}
 @media screen and (min-width:768px){}
-*/
+
 @media screen and (min-width:1024px){
   .s-biog{grid-template-columns: 1.5fr 1fr;}
   .s-proy{grid-template-columns: 1.2fr 1fr;}
