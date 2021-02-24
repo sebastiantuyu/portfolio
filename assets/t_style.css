@@ -71,7 +71,8 @@ section {
   color:white;
   font-size:35px;
   width:40%;
-  /*margin:5% 0 0 5%;*/
+  align-items: flex-end;
+  font-weight: 200;
   text-align:left;
   border-bottom:1px solid white;
   height: 10%;
@@ -264,7 +265,12 @@ section {
   .s-first{width:100%;}
   .s-second{display: none;}*/
 }
-
+@media screen and (min-width:375px){
+  #bio-content{
+    font-size: 135%;
+  }
+  .bio{padding-right: 1em;}
+}
 @media screen and (min-width:420px){
   .bio-image{width:60%;}
 }
