@@ -26,13 +26,18 @@ section {
   grid-template-columns:1fr;
 }
 .s-biog{
-  display:flex;
+  display:grid;
   overflow:hidden;
+  grid-template-columns:1.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:"a b";
 }
 .s-proy{
-  display: flex;
+  display: grid;
   color: white;
-
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows:1fr;
+  grid-template-areas:"c d";
 }
 
 #bio-content{
@@ -50,14 +55,16 @@ section {
 
 /* BIO SECTION: ITEMS */
 .b-first{
-  height:100%;
-  width:60%;
+  /*height:100%;
+  width:60%;*/
+  grid-area:"a";
 }
 .b-second{
   display:flex;
   justify-content:center;
-  height:100%;
-  width:40%;
+  /*height:100%;
+  width:40%;*/
+  grid-area:"b";
 }
 .b-first .title{
   display:flex;
@@ -121,16 +128,18 @@ section {
 
 
 .s-first{
-  width: 55%;
-  height: 100%;
+  /*width: 55%;
+  height: 100%;*/
+  grid-area:"c";
   display: grid;
   grid-template-rows: 80px 1fr;
   grid-template-columns: 1fr;
   
 }
 .s-second{
-  width: 45%;
-  height: 100%;
+  /*width: 45%;
+  height: 100%;*/
+  grid-area:"d";
   display: flex;
 }
 .s-proy .title{
@@ -184,7 +193,20 @@ section {
 /* MEDIA QUERIES */
 
 @media screen and (min-width:320px){
+  
   .s-biog{
+    grid-template-columns: 1fr;
+    grid-template-areas:"a a";
+  }
+  .b-second{display: none;}
+  .s-second{display: none;}
+  .s-proy{
+    grid-template-columns: 1fr;
+    grid-template-areas:"c c";
+  }
+  
+  
+  /*.s-biog{
     display: block;
   }
   .s-proy{
@@ -197,7 +219,7 @@ section {
     grid-template-columns:1fr;
   }
   .b-first .content{
-    /*font-size: 20px;*/
+
     width:calc(100vw - 3em);
     padding:0 1em 0 2em;
   }
@@ -210,8 +232,7 @@ section {
     position: relative;
     overflow-x: scroll;
     width: 90%;
-    /*margin-top: 10%;
-    overflow: hidden;*/
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,11 +242,16 @@ section {
   }
   .hor-car img{width: 75%; object-fit: contain;padding:0 5% 0 5%;}
   .s-first{width:100%;}
-  .s-second{display: none;}
+  .s-second{display: none;}*/
 }
+/*
 @media screen and (min-width:420px){}
 @media screen and (min-width:768px){}
+*/
 @media screen and (min-width:1024px){
-  .s-first{width:55%;}
-  .s-second{width:45%;display:flex;}
+  .s-biog{grid-template-columns: 1.5fr 1fr;}
+  .s-proy{grid-template-columns: 1.2fr 1fr;}
+  .s-second{display:flex;}
+  .b-second{display: flex;}
 }
+
