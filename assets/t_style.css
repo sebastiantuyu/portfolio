@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 :root{
-  --venn:url('https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Aa6e92c1d5daddfc9baf32541d58e5350a5eadea801436d8cde867abf%2BIMAGE_TINY%2BIMAGE_TINY.1');
+  --green:#74867A;
+  --darK:#333333;
 }
 body{
   margin:0;width:100%;height:100%;
@@ -41,7 +42,19 @@ section {
   grid-template-rows:1fr;
   grid-template-areas:"c d";
 }
+/* BURGER MENU */
+.burger-menu{
+  position: absolute;
+  top:0;left:0;
+  width:80%;
+  height:100vh;
+  z-index: 4;
+  background:white;
+  margin-left:-100vw;
+  transition: 500ms;
+}
 
+.m-transition{margin-left:0;}
 #bio-content{
   /*position: relative;*/
   font-size: 120%;
@@ -54,7 +67,7 @@ section {
   align-items: center;
 }
 .item:nth-of-type(3){
-  background:green;
+ background-color: var(--green); 
 }
 
 /* NAV */
@@ -68,15 +81,46 @@ section {
 .item-nav:nth-of-type(1)::before{
   content:"Proyectos";
 }
-
-
-
+.item-nav:nth-of-type(2)::before{
+  content:"Portafolio";
+}
+.item-nav:nth-of-type(4)::before{
+  content:"Inversiones";
+}
+.item-nav:nth-of-type(5)::before{
+  content:"Contacto";
+}
 .item-nav:nth-of-type(3){
   display: flex;
 }
 
+.main{
+  font-family: 'Roboto';
+  display: flex;
+  width: 80%;
+  height: 70%;
+  color:white;
+  text-align: left;
+  font-weight: 200;
+  justify-self: center;
+  /*align-items: center;*/
+  font-size: 25px;
+  margin-top:30%;
+  margin-left:-100%;
+  opacity: 0;
+  transition: 250ms;
+}
 
-
+.main-tran{opacity: 1;margin-left: 10%;}
+.brand-title{
+  height: 40%;
+  overflow:hidden;
+  color: white;
+}
+.brand-logos{
+  width: 100%;
+  height: 60%;
+}
 /* BIO SECTION: ITEMS */
 .b-first{
   /*height:100%;
@@ -136,6 +180,7 @@ section {
   height:auto;
   object-fit:contain;
 }
+
 
 .b-second .container{
   align-self:center;
@@ -253,6 +298,19 @@ section {
   padding:0 5% 0 5%;
   width: 70%;
   object-fit: cover;
+
+}
+
+
+
+
+#close-menu{
+  text-decoration: none;text-align: right;
+  color:#333;
+  font-size: 35px;
+  margin-right: 5%;
+  display: flex;
+  justify-content: flex-end;
 }
 /* MEDIA QUERIES */
 
@@ -274,12 +332,14 @@ section {
   .item-nav:nth-of-type(1){display: block;}
   .item-nav:nth-of-type(4){display: block;visibility: hidden;}
   .item-nav:nth-of-type(1)::before{
-
     content:"⚪";
   }
-  .item-nav:nth-of-type(2)::before{
-    content:"";
+  .item-nav:nth-of-type(4)::before{
+    content:"⚪";
   }
+  /*.item-nav:nth-of-type(2)::before{
+    content:"";
+  }*/
   
   /*.s-biog{
     display: block;
@@ -340,9 +400,14 @@ section {
   .hor-car{display: none;}
   .item-nav{
     display: block;
+    visibility: visible;
   }
+  .item-nav:nth-of-type(4){visibility: visible;}
   .item-nav:nth-of-type(1)::before{
     content:"Proyectos";
+  }
+  .item-nav:nth-of-type(4)::before{
+    content:"Inversiones";
   }
 }
 
