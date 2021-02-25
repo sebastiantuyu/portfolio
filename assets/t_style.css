@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 :root{
   --venn:url('https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Aa6e92c1d5daddfc9baf32541d58e5350a5eadea801436d8cde867abf%2BIMAGE_TINY%2BIMAGE_TINY.1');
 }
@@ -68,14 +70,17 @@ section {
 }
 .b-first .title{
   display:flex;
+  font-family: 'Roboto';
   color:white;
+  font-weight: 200;
   font-size:35px;
   width:40%;
   align-items: flex-end;
-  font-weight: 200;
   text-align:left;
+  padding-left: 10%;
   border-bottom:1px solid white;
   height: 10%;
+  font-variant: small-caps;
 }
 .b-first .content{
   /*width:calc(100% - 2em);*/
@@ -145,13 +150,30 @@ section {
 }
 .s-proy .title{
   display:flex;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-variant: small-caps;
   color:white;
   font-size:35px;
   width:40%;
-  margin:5% 0 0 5%;
-  height:fit-content;
+  height:100%;
+  align-items: flex-end;
   text-align:left;
+  padding-left: 10%;
   border-bottom:1px solid white;
+  /*
+    display:flex;
+  font-family: 'Roboto';
+  color:white;
+  font-weight: 200;
+  font-size:35px;
+  width:40%;
+  align-items: flex-end;
+  text-align:left;
+  padding-left: 10%;
+  border-bottom:1px solid white;
+  height: 10%;
+  */
 }
 
 
