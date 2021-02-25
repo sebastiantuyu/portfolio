@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 :root{
   --venn:url('https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Aa6e92c1d5daddfc9baf32541d58e5350a5eadea801436d8cde867abf%2BIMAGE_TINY%2BIMAGE_TINY.1');
 }
@@ -48,12 +48,28 @@ section {
 }
 
 /* MAIN SECTION: ITEMS */
-.item:nth-of-type(1){
-  background:green;
+.item:nth-of-type(1){ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .item:nth-of-type(3){
   background:green;
 }
+
+/* NAV */
+.item-nav{
+  display:none;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.item-nav:nth-of-type(3){
+  display: flex;
+}
+
+
 
 /* BIO SECTION: ITEMS */
 .b-first{
@@ -286,12 +302,14 @@ section {
   .hor-car img{width: 75%; object-fit: contain;padding:0 5% 0 5%;}
   .s-first{width:100%;}
   .s-second{display: none;}*/
+
 }
 @media screen and (min-width:375px){
   #bio-content{
     font-size: 135%;
   }
   .bio{padding-right: 1em;}
+
 }
 @media screen and (min-width:420px){
   .bio-image{width:60%;}
@@ -304,5 +322,9 @@ section {
   .s-second{display:flex;}
   .b-second{display: flex;}
   .hor-car{display: none;}
+  .item-nav{
+    display: block;
+  }
+
 }
 
