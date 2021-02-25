@@ -38,7 +38,9 @@ function closeMenu(){
 
 function Manimations(){
     let main = document.getElementById('main-div')
+    let bar = document.getElementById('main-view')
     setTimeout(function(){
       main.classList.add('main-tran')
+      bar.classList.add('up-bar')
     },200)
 }

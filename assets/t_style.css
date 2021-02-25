@@ -34,6 +34,7 @@ section {
   grid-template-columns:1.5fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:"a b";
+ 
 }
 .s-proy{
   display: grid;
@@ -69,6 +70,14 @@ section {
 .item:nth-of-type(3){
  background-color: var(--green); 
 }
+
+
+/* FX */
+.up-bar{
+  grid-template-rows:60px 1fr 120px;
+}
+
+
 
 /* NAV */
 .item-nav{
@@ -114,6 +123,8 @@ section {
 .main-tran{opacity: 1;margin-left: 10%;}
 .brand-title{
   height: 40%;
+  font-family: 'Roboto';
+  font-weight: 200;
   overflow:hidden;
   color: white;
 }
