@@ -57,8 +57,7 @@ thin{font-weight: 200;}
   background:white;
   margin-left:-100vw;
   transition: 500ms;
-}
-#close-button{
+}.close-button{
   width: 27px;
   height: 27px;
   border-radius: 50%;
@@ -384,7 +383,7 @@ thin{font-weight: 200;}
   font-size: 35px;
   margin:5% 5% 0 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 /* MEDIA QUERIES */
 
@@ -491,5 +490,9 @@ thin{font-weight: 200;}
 @media screen and (max-height:600px){
   .main{
     margin-bottom: 10%;
+  }
+
+  .b-first .content .image{
+    margin-top: 8%;
   }
 }
