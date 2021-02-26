@@ -26,8 +26,14 @@
 <body onload="Manimations()">
 
   <section class="burger-menu" id="bSection">
-        <a href="#" id="close-menu" onclick="closeMenu()">X</a>
-        <div><a href="#">--Portafolio--</a></div>
+        <a href="#" id="close-menu" onclick="closeMenu()">
+          <div id="close-button"></div>
+        </a>
+            <div class="menu-menu">
+              <div><a href="#" class="menu-item" >Portafolio</a></div>
+              <div><a href="#" class="menu-item" >Inversiones</a></div>
+              <div><a href="#" class="menu-item" >Contactame</a></div>
+            </div>
   </section>
 
   <section class="s-main" id="main-view">
@@ -43,20 +49,24 @@
     <div class="item">
       <!-- MAIN DIV-->
         <div class="main" id="main-div">
-          <span>Desarrollador de software, polivalente, emprendedor y entusisasta por las inversiones.</span>
+          <span><light>Desarrollador de software,</light>
+                <thin>polivalente, emprendedor y entusisasta por las inversiones.</thin> </span>
         </div>
+        <a href="#biog" id="kmore">conocer más</a>
 
     </div>
-    <div class="item">
-      <div class="brand-title">colaborado con</div>
+    <div class="item" id="brand-bar">
+      <div class="brand-title"><thin>colaborado con</thin> </div>
       <div class="brand-logos">
-
+        <div class="brand-item bkc-conf"><!--ANREAL--></div>
+        <div class="brand-item bkc-conf"><!-- DAA--></div>
+        <div class="brand-item bkc-conf"><!-- ? --></div>
       </div>
     </div>
   </section>
   
   
-  <section class="s-biog">
+  <section class="s-biog" id="biog">
     <div class="b-first">
           <div class="title" style="overflow: hidden;">
         <span>Biografía</span>

@@ -23,9 +23,13 @@ section {
   position: relative;
 }
 
+light{
+  font-weight: 300;
+}
+thin{font-weight: 200;}
 .s-main{
   display:grid;
-  grid-template-rows:60px 1fr 60px;
+  grid-template-rows:60px 1fr 120px;
   grid-template-columns:1fr;
 }
 .s-biog{
@@ -54,6 +58,28 @@ section {
   margin-left:-100vw;
   transition: 500ms;
 }
+#close-button{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border:1px solid #333;
+  background:red;
+}
+
+.menu-menu{
+  height: calc(100% - 30px);
+  margin-top:30%;
+}
+.menu-menu div{
+  margin:10% 0 10% 0;
+}
+
+.menu-item{
+  text-decoration: none;
+  color: var(--darK);
+  font-size: 25px;
+  
+}
 
 .m-transition{margin-left:0;}
 #bio-content{
@@ -67,14 +93,16 @@ section {
   justify-content: space-around;
   align-items: center;
 }
-.item:nth-of-type(3){
+#brand-bar/*.item:nth-of-type(3)*/{
+  opacity: 0;
  background-color: var(--green); 
+ transition: 1s;
 }
 
 
 /* FX */
 .up-bar{
-  grid-template-rows:60px 1fr 120px;
+  opacity:1 ;
 }
 
 
@@ -107,7 +135,7 @@ section {
   font-family: 'Roboto';
   display: flex;
   width: 80%;
-  height: 70%;
+  height: 40%;
   color:white;
   text-align: left;
   font-weight: 200;
@@ -124,14 +152,48 @@ section {
 .brand-title{
   height: 40%;
   font-family: 'Roboto';
-  font-weight: 200;
   overflow:hidden;
   color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
 .brand-logos{
   width: 100%;
   height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row:1fr;
 }
+.brand-item{
+  display: flex;
+  object-fit: contain;
+  align-items:center;
+}
+.brand-item:nth-of-type(1){
+  background:url('images/brands/arraynes.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: contain;
+}
+
+
+.brand-item:nth-of-type(2){
+  background:url('images/brands/daa.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: contain;
+  mix-blend-mode: color-dodge;
+}
+
+.brand-item:nth-of-type(3){
+  background:url('images/brands/sa_.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: 80%;
+}
+
+
 /* BIO SECTION: ITEMS */
 .b-first{
   /*height:100%;
@@ -167,16 +229,17 @@ section {
   /*margin:5% 0 0 0;*/
   height: 90%;
 }
-.b-first .content .kmore{
+/*.b-first .content */#kmore{
+  text-decoration: none;
   color:white;
   border:1px solid white;
   background:#222222;
-  font-size:2vh;
+  font-size:18px;
   letter-spacing: 0.1em;
   padding:.5em;
   font-variant: small-caps;
-  margin:5% 30% 0 30%;
   width:40%;
+  margin-top: 5%;
 
 }
 .b-first .content .image{
@@ -319,7 +382,7 @@ section {
   text-decoration: none;text-align: right;
   color:#333;
   font-size: 35px;
-  margin-right: 5%;
+  margin:5% 5% 0 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -347,6 +410,9 @@ section {
   }
   .item-nav:nth-of-type(4)::before{
     content:"⚪";
+  }
+  .up-bar{
+    opacity:1 ;
   }
   /*.item-nav:nth-of-type(2)::before{
     content:"";
@@ -422,3 +488,8 @@ section {
   }
 }
 
+@media screen and (max-height:600px){
+  .main{
+    margin-bottom: 10%;
+  }
+}

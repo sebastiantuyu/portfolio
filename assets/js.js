@@ -38,9 +38,9 @@ function closeMenu(){
 
 function Manimations(){
     let main = document.getElementById('main-div')
-    let bar = document.getElementById('main-view')
+    let bar = document.getElementById('brand-bar')
     setTimeout(function(){
       main.classList.add('main-tran')
-      bar.classList.add('up-bar')
+      bar.style.opacity =1;
     },200)
 }
