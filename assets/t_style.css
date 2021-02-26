@@ -468,6 +468,24 @@ thin{font-weight: 200;}
 }
 @media screen and (min-width:768px){}
 
+/* ------------- CONF HEIGHT ---------------*/
+
+@media screen and (max-height:600px){
+  .main{
+    margin-bottom: 10%;
+  }
+
+  .b-first .content .image{
+    margin-top: 8%;
+  }
+}
+
+@media screen and (min-height:700px){
+ .main{
+   font-size:30px;
+ } 
+}
+/* ------------------- END  ---------------*/
 @media screen and (min-width:1024px){
   .s-biog{grid-template-columns: 1.5fr 1fr;}
   .s-proy{grid-template-columns: 1.2fr 1fr;}
@@ -484,15 +502,5 @@ thin{font-weight: 200;}
   }
   .item-nav:nth-of-type(4)::before{
     content:"Inversiones";
-  }
-}
-
-@media screen and (max-height:600px){
-  .main{
-    margin-bottom: 10%;
-  }
-
-  .b-first .content .image{
-    margin-top: 8%;
   }
 }

@@ -44,3 +44,22 @@ function Manimations(){
       bar.style.opacity =1;
     },200)
 }
+
+function redirectTo(e){
+  let scroll_size = 0
+
+  if(e == 'biog'){
+      scroll_size =  window.innerHeight
+  }
+  else if(e=='proyect'){
+    scroll_size = window.innerHeight*2
+  }
+    
+  
+  console.log(scroll)
+  bSection.classList.remove('m-transition')
+  /*window.scroll({top: scroll,behavior: "smooth"});*/
+  setTimeout(function(){
+    window.scroll({top: scroll_size,behavior: "smooth"})
+  },250)
+}
