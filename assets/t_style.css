@@ -84,6 +84,7 @@ thin{font-weight: 200;}
 #bio-content{
   /*position: relative;*/
   font-size: 120%;
+  font-family: 'Roboto';
 }
 
 /* MAIN SECTION: ITEMS */
@@ -321,6 +322,47 @@ thin{font-weight: 200;}
 .s-first .content{
   position: relative;
   height:100%;
+  display: grid;
+  grid-template-rows: 40px 150px 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+.c-header{
+  font-size:25px;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.c-description{
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 18px;
+  padding:0.5em 1.5em 0 1.5em;
+  text-align: justify;
+}
+.c-proy{
+  display: grid;
+  grid-template-columns:30px 1fr 30px;
+}
+.proy-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proy-item:nth-of-type(3) img{
+  margin-right: 20%;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+.proy-item:nth-of-type(1) img{
+  margin-left: 20%;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  transform:rotate(180deg);
 }
 
 .s-second .image{
@@ -371,9 +413,10 @@ thin{font-weight: 200;}
   padding:0 5% 0 5%;
   width: 70%;
   object-fit: cover;
-
 }
-
+.bio-image-me:nth-of-type(1){
+  padding:0 5% 0 15%;
+}
 
 
 
@@ -502,5 +545,8 @@ thin{font-weight: 200;}
   }
   .item-nav:nth-of-type(4)::before{
     content:"Inversiones";
+  }
+  .s-first .content{
+    display: none;
   }
 }

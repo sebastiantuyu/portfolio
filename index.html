@@ -77,8 +77,10 @@
            <div class="content">
                 <div class="bio">
                     <span id="bio-content">
-                      Me dedico a ayudar a las empresas a encontrar de que forma 
+                      <thin>
+                        Me dedico a ayudar a las empresas a encontrar de que forma 
                       pueden reinventarse eficientando sus procesos o generando nuevos productos.
+                      </thin>
                     </span>
                   <!--<button class="kmore"> Saber más </button>-->
                   </div>
@@ -110,14 +112,31 @@
       <div class="s-first">
         <div class="title"> Proyectos</div>
             <div class="content">
-                <div class="c-header">
-                    <span>Titulo del Proyecto</span>
-                </div>
-
-
+                      <div class="c-header">
+                          <span id="p-title">Titulo del Proyecto</span>
+                      </div>
+                      <div class="c-description">
+                        <span id="p-descr">Esta es la descripcion del proyecto, en donde muestro que tecnologías use.
+                          También me encargo de explicar que fue lo que yo hice durante el proyecto, y los 
+                          retos que con llevo, además de lo que más me gusto.
+                        </span>
+                      </div>
+                      <div class="c-proy">
+                        <!-- Proyecto imagen -->
+                        <div class="proy-item next" onclick="mLeft()">
+                          <img src="assets/next-right.png" alt="">
+                        </div>
+                        <div class="proy-item">
+                          <img src="assets/cell.png" alt="" style="width: 85%;height: auto;object-fit: contain;">
+                        </div>
+                        <div class="proy-item next" onclick="mRight()">
+                          <img src="assets/next-right.png" alt="">
+                        </div>
+                      </div>
             </div>
       </div>
-      <div class="s-second">
+      <!-- VISTA DE PROYECTO: DESKTOP VIEW -->
+             <div class="s-second">
         <div class="image">
           <img src="assets/cell.png" alt="">
         </div>

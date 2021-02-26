@@ -12,6 +12,8 @@ if (window.innerWidth<1024){
       bSection.classList.remove('m-transition')
     }
   })
+  var titlePro = document.getElementById('p-title')
+  var descrPro = document.getElementById('p-descr')
   mob = true
 }else{
   //let x = document.getElementById('img-container')
@@ -62,4 +64,13 @@ function redirectTo(e){
   setTimeout(function(){
     window.scroll({top: scroll_size,behavior: "smooth"})
   },250)
+}
+
+
+function mLeft(){
+    titlePro.innerHTML = "Previous"
+}
+
+function mRight(){
+  titlePro.innerHTML = "Next"
 }
