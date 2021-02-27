@@ -56,6 +56,9 @@ function redirectTo(e){
   else if(e=='proyect'){
     scroll_size = window.innerHeight*2
   }
+  else if(e == 'p-simulator'){
+    window.location.href = '/simulador'
+  }
     
   
   console.log(scroll)
