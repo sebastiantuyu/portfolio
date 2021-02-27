@@ -21,7 +21,13 @@ section {
   scroll-snap-align: start;
   text-align: center;
   position: relative;
+  background-image:url('images/brands/sb-transp.svg');
+  background-repeat: no-repeat;
+
 }
+section:nth-of-type(2){background-image: none;}
+section:nth-of-type(3){background-position: 280% -50%;}
+section:nth-of-type(4){background-position: 240% 130%;}
 
 light{
   font-weight: 300;
@@ -336,6 +342,7 @@ thin{font-weight: 200;}
   justify-content: center;
 }
 .c-description{
+  text-indent: 35px;
   font-family: 'Roboto';
   font-weight: 200;
   font-size: 18px;
@@ -391,6 +398,7 @@ thin{font-weight: 200;}
 .hor-car{
   display: none;
   overflow-x: scroll;
+  justify-content: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 75%;
@@ -410,12 +418,13 @@ thin{font-weight: 200;}
 
 }
 .bio-image-me{
-  padding:0 5% 0 5%;
+  /*padding:0 5% 0 5%;*/
   width: 70%;
   object-fit: cover;
 }
 .bio-image-me:nth-of-type(1){
-  padding:0 5% 0 15%;
+  /*padding:0 5% 0 15%;*/
+  border-radius: 10px;
 }
 
 

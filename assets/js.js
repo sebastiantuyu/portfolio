@@ -68,9 +68,11 @@ function redirectTo(e){
 
 
 function mLeft(){
-    titlePro.innerHTML = "Previous"
+    /*titlePro.innerHTML = "Previous"
+    let x = document.getElementById('p-image')
+    x.src = 'assets/cell.png'*/
 }
 
 function mRight(){
-  titlePro.innerHTML = "Next"
+  /*titlePro.innerHTML = "Next"*/
 }
