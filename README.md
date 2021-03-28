@@ -8,7 +8,7 @@
 
 ### Investment calculator :chart_with_upwards_trend:
 
-<details><summary> ##### What it does </summary>
+<details><summary> <h5>What it does</h5> </summary>
 <p>
  This is a front-end exmaple of my work, working with CSS, HTML and intermediate JavaScript. In this project you can explore fintech-apps for invest on mexico. The page also shows how much you networth it will be if you keep re-investing in order to create compound interest.
  </p>
