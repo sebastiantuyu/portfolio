@@ -1,4 +1,4 @@
-# Portfolio 
+# Portfolio  :books:  :open_file_folder: :books:
 
 > This is my portfolio where i show all my previous and future projects. I also add a new section where i share my blogs. All the resources presented here are created by me. 
 
@@ -6,7 +6,7 @@
 
  All the projects are storaged on a folder depending on their name:
 
-#### Investment calculator
+### Investment calculator :chart_with_upwards_trend:
 
 ##### What it does
 
