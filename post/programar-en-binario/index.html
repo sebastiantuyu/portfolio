@@ -32,7 +32,7 @@
 </div><div class="content">
 <!-- BLOG CONTENT STARTS HERE -->
 
-<div class="title" style="background: linear-gradient(0deg, rgba(116, 134, 122, 0.45), rgba(116, 134, 122, 0.45)),url('https://images.unsplash.com/photo-1610986602726-19f650133f7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=779&q=80');background-position:center center;">
+<div class="title" style="background: linear-gradient(0deg, rgba(116, 134, 122, 0.45), rgba(116, 134, 122, 0.45)),url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');background-position:center center;">
 <h1>Como programar usando solo 0 y 1</h1>
 <date> Sat Apr 26 17:58:21 2021 </date></div>
 
@@ -72,16 +72,25 @@
 
 <p>Es preferible tenerlos como <i style="color:red">0x40000001</i></p>
 
-<p>Nuestra computadora, al leer un dato lo que hace es almacenarlo en nuestro <i>stack</i> que es nuestra memoria temporal. Esta memoria funciona empleando una filosofia <span style="color:red">FILO</span></p>
+<p>Supongamos que queremos calcular una suma basica entre dos numeros, tendríamos que escribir:</p>
 
+<p style="color:red">3 4 +</p>
 
-<p>La computadora estara leyendo los datos, hasta que nosotros le digamos porfin que tiene ejecutar una operación. Recuerda que puede operar cuestiones primitivas... </p>
+<p>La computadora leería parte por parte del codigo, cambiando todo a binario para poder ser leido.</p>
 
-<p>Por lo tanto si nosotros escribieramos </p>
+<p style="color:red">Llegados a este punto... ¡Nuestra computadora ya transformo todo nuestro codigo ha completamente 1 y 0!</p>
 
-<p style="color:red">3 4 + </p>
+<p>Ahora toca ejecutar el codigo. Nuestra computadora, al leer un dato lo que hace es almacenarlo en nuestro <i>stack</i> que es nuestra memoria temporal.</p>
 
-<p>Nuestra computadora nos devolvería un 7, puesto que es la operación que le hemos pedido que realice.</p>
+<ul>
+  <li>Leería y guarda un 3</li>
+  <li>Leería y guarda un 4</li>
+  <li>Ejecuta una suma de lo leído hasta el momento...</li>
+  <li>Elimina todo lo anterior</li>
+  <li>Almacena el resultado nuevo</li>
+</ul>
+
+<p>Nuestra computadora nos devolvería un 7, puesto que es la operación que le hemos pedido que realice. <i style="color:red">(Y por cierto, en nuestra memoria <b>solo</b> tendríamos almacenado un 7)</i> </p>
 
 <p>Basicamente esto sería estar programando de una forma muy basica, a uno de los niveles mas profundos a los que podemos programar. Espero que todo el contenido haya sido de tu agrado :)</p>
 
